@@ -20,7 +20,7 @@ __metadata:
   dependencies:
     "@craftercms/models": "npm:0.0.0-PLACEHOLDER"
     "@craftercms/utils": "npm:0.0.0-PLACEHOLDER"
-    "@rollup/plugin-commonjs": "npm:^25.0.7"
+    "@rollup/plugin-commonjs": "npm:^29.0.2"
     "@rollup/plugin-node-resolve": "npm:^15.2.3"
     chai: "npm:^5.1.1"
     mocha: "npm:^10.8.2"
@@ -42,7 +42,7 @@ __metadata:
     "@craftercms/classes": "npm:0.0.0-PLACEHOLDER"
     "@craftercms/models": "npm:0.0.0-PLACEHOLDER"
     "@craftercms/utils": "npm:0.0.0-PLACEHOLDER"
-    "@rollup/plugin-commonjs": "npm:^25.0.7"
+    "@rollup/plugin-commonjs": "npm:^29.0.2"
     "@rollup/plugin-node-resolve": "npm:^15.2.3"
     "@types/mocha": "npm:^10.0.10"
     chai: "npm:^5.1.1"
@@ -64,7 +64,7 @@ __metadata:
   resolution: "@craftercms/ice@workspace:packages/ice"
   dependencies:
     "@craftercms/models": "npm:0.0.0-PLACEHOLDER"
-    "@rollup/plugin-commonjs": "npm:^25.0.7"
+    "@rollup/plugin-commonjs": "npm:^29.0.2"
     "@rollup/plugin-node-resolve": "npm:^15.2.3"
     "@testing-library/react": "npm:^16.0.0"
     enzyme: "npm:^3.11.0"
@@ -84,7 +84,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@craftercms/models@workspace:packages/models"
   dependencies:
-    "@rollup/plugin-commonjs": "npm:^25.0.7"
+    "@rollup/plugin-commonjs": "npm:^29.0.2"
     "@rollup/plugin-node-resolve": "npm:^15.2.3"
     rollup: "npm:^2.79.1"
     rollup-plugin-sourcemaps: "npm:^0.6.3"
@@ -98,7 +98,7 @@ __metadata:
   dependencies:
     "@craftercms/content": "npm:0.0.0-PLACEHOLDER"
     "@reduxjs/toolkit": "npm:^2.2.2"
-    "@rollup/plugin-commonjs": "npm:^25.0.7"
+    "@rollup/plugin-commonjs": "npm:^29.0.2"
     "@rollup/plugin-node-resolve": "npm:^15.2.3"
     "@types/mocha": "npm:^10.0.10"
     chai: "npm:^5.1.1"
@@ -134,7 +134,7 @@ __metadata:
     "@craftercms/classes": "npm:0.0.0-PLACEHOLDER"
     "@craftercms/models": "npm:0.0.0-PLACEHOLDER"
     "@craftercms/utils": "npm:0.0.0-PLACEHOLDER"
-    "@rollup/plugin-commonjs": "npm:^25.0.7"
+    "@rollup/plugin-commonjs": "npm:^29.0.2"
     "@rollup/plugin-node-resolve": "npm:^15.2.3"
     "@types/mocha": "npm:^10.0.10"
     chai: "npm:^5.1.1"
@@ -155,7 +155,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@craftercms/utils@workspace:packages/utils"
   dependencies:
-    "@rollup/plugin-commonjs": "npm:^25.0.7"
+    "@rollup/plugin-commonjs": "npm:^29.0.2"
     "@rollup/plugin-node-resolve": "npm:^15.2.3"
     mocha: "npm:^10.8.2"
     rollup: "npm:^2.79.1"
@@ -298,22 +298,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-commonjs@npm:^25.0.7":
-  version: 25.0.7
-  resolution: "@rollup/plugin-commonjs@npm:25.0.7"
+"@rollup/plugin-commonjs@npm:^29.0.2":
+  version: 29.0.2
+  resolution: "@rollup/plugin-commonjs@npm:29.0.2"
   dependencies:
     "@rollup/pluginutils": "npm:^5.0.1"
     commondir: "npm:^1.0.1"
     estree-walker: "npm:^2.0.2"
-    glob: "npm:^8.0.3"
+    fdir: "npm:^6.2.0"
     is-reference: "npm:1.2.1"
     magic-string: "npm:^0.30.3"
+    picomatch: "npm:^4.0.2"
   peerDependencies:
     rollup: ^2.68.0||^3.0.0||^4.0.0
   peerDependenciesMeta:
     rollup:
       optional: true
-  checksum: d096af5aedd55c19ac528daa84a4cacdf21a69c9c9b20c23e04f27a64966cb383f5e2b01b9c903d40318e35dcaa74dc7b5292a844c6cbc66c252f5447eac05b4
+  checksum: a2ef65014ed9b9b1daa51c9ae845ec2a935754539f6557c760b142855ce03a70fa67e2bd1bace3c947c9c14b4edd22020e51033a400d9291d30dfa46dc94f374
   languageName: node
   linkType: hard
 
@@ -1373,6 +1374,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fdir@npm:^6.2.0":
+  version: 6.5.0
+  resolution: "fdir@npm:6.5.0"
+  peerDependencies:
+    picomatch: ^3 || ^4
+  peerDependenciesMeta:
+    picomatch:
+      optional: true
+  checksum: e345083c4306b3aed6cb8ec551e26c36bab5c511e99ea4576a16750ddc8d3240e63826cc624f5ae17ad4dc82e68a253213b60d556c11bfad064b7607847ed07f
+  languageName: node
+  linkType: hard
+
 "fill-range@npm:^7.1.1":
   version: 7.1.1
   resolution: "fill-range@npm:7.1.1"
@@ -1571,7 +1584,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^8.0.3, glob@npm:^8.1.0":
+"glob@npm:^8.1.0":
   version: 8.1.0
   resolution: "glob@npm:8.1.0"
   dependencies:
@@ -2712,6 +2725,13 @@ __metadata:
   version: 2.3.1
   resolution: "picomatch@npm:2.3.1"
   checksum: 26c02b8d06f03206fc2ab8d16f19960f2ff9e81a658f831ecb656d8f17d9edc799e8364b1f4a7873e89d9702dff96204be0fa26fe4181f6843f040f819dac4be
+  languageName: node
+  linkType: hard
+
+"picomatch@npm:^4.0.2":
+  version: 4.0.3
+  resolution: "picomatch@npm:4.0.3"
+  checksum: 9582c951e95eebee5434f59e426cddd228a7b97a0161a375aed4be244bd3fe8e3a31b846808ea14ef2c8a2527a6eeab7b3946a67d5979e81694654f939473ae2
   languageName: node
   linkType: hard
 
